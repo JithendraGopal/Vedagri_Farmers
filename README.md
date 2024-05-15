@@ -1,1 +1,0 @@
-# Vedagri_Farmers
