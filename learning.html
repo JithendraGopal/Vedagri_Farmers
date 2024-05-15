@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Image using Flexbox</title>
+    <style>
+        .only-logo {
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 200px; /* Set height of the parent div */
+            background-color: lightgray; /* Just for visualization */
+        }
+
+        .logoImagediv img {
+            max-width: 100%; /* Ensure image does not exceed parent width */
+            max-height: 100%; /* Ensure image does not exceed parent height */
+            display: block; /* Ensure image behaves as block element */
+        }
+    </style>
+</head>
+<body>
+    <div class="only-logo">
+        <div class="logoImagediv"><img src="./photos/Logo without background.png" alt="logo"></div>
+    </div>
+</body>
+</html>

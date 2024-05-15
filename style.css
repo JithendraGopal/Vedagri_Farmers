@@ -1,0 +1,1209 @@
+/* Dropdown container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.ServicesBtt:hover .dropdown-content {
+    display: block;
+    width: 20%;
+    height: 80px;
+    border-radius: 10px;
+
+}
+/* body style */
+body{
+    background-color:white;
+}
+/* nav bar section for above pixel width 1278px */
+.Nav_bar 
+{
+    background-color:white;
+    border: 5px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.Brand_name h1
+{
+    font-family: "Lora", serif;
+    font-size: 200%;
+    margin:20px ;
+    color: #FD7703;
+}
+.Btt{
+    padding:0px 30px  ;
+    background-color: white;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.JoinBtt
+{
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: bolder;
+    border:2px solid #FD7703;
+    background-color: #FD770360;
+    background-image: linear-gradient(#FD7703, #FC9604);
+    border-radius: 20px;
+    border: 0px solid;
+    color: white;
+}
+.nav_join{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    width: 70%;
+}
+.navBar_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a.navBar_buttons, a:hover{
+    color: #DF6903;
+}
+.logoImage
+{
+    height:50px;
+    padding-top: 12px;
+    padding-left: 30px;
+}
+.NavButtDiv{
+    padding-top: 5px;
+}
+button.NavButtDiv, button:hover{
+    background: linear-gradient(to bottom, #ff8a00 100%, #DF6903 10%);
+    color: white;
+}
+
+.navBar_buttons_side{
+    display: flex;
+    flex-direction: column;
+    padding-top: 6%;
+    font-size: 1.8rem;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    padding-bottom: 9%;
+}
+.nav_join_side{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 78%;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -6px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10% 0px 0px;
+}
+.menu_bar_back{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.Btt_side {
+    margin: 30px 0px;
+
+}
+.NavButtDiv_side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* navbar for the size less than 1278px in width */
+@media screen and (max-width: 1278px){
+    .Nav_bar 
+{
+    background-color:white;
+    border: 5px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+a.navBar_buttons, a:hover{
+    color: #DF6903;
+}
+.Brand_name h1
+{
+    font-family: "Lora", serif;
+    font-size: 200%;
+    color: #FD7703;
+    margin: 20px 0px 20px 10px;
+}
+.Btt{
+    padding:0px 30px  ;
+    background-color: white;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.JoinBtt
+{
+    border-radius: 50px;
+    padding: 5px 25px;
+    font-weight: bolder;
+    border:2px solid #FD7703;
+    width: 120%;
+    height: 100%;
+    font-size: 1em;
+}
+.nav_join{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    width: 66%;
+}
+.navBar_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logoImage
+{
+    height: 3.125em;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+.NavButtDiv{
+    padding-top: 5px;
+}
+    
+}
+
+.Main_home_image {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-image: url('./photos/photo-output.JPEG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+}
+.text-image {
+    background: #6FB71399;
+    border-radius: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    height: 60%;
+}
+
+/* .Main_home_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+} */
+.text-image h1{
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    color: white;
+    margin-bottom: 0px;
+    z-index: 1;
+    width: 87%;
+}
+.text-image {
+    background: #6FB71399;
+    border-radius: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5%;
+    height: auto;
+}
+.text_para{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 130%;
+    font-weight: 400;
+    line-height: 2.5rem;
+    padding-left: 20px;
+    width: 80%;
+    padding-bottom: 10%;
+}
+
+
+.welcome-title{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+.welcome-title h2{
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to bottom, #ff8a00 0%, #DF6903 100%);
+    /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+    font-family: "Lora", serif;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.welcom-image-text{
+    width: 100%;
+    height: 130%;
+    background-color: #FD770310;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+}
+.welcom-img{
+    width: 24.25em;
+    height: 24.25em;
+    margin: 30px 0px;
+}
+.welcom-img img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.welcom-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-left: 12.5em;
+
+
+}
+.welcom-text p {
+    font-family: "Lateef", serif;
+    font-size: 30px;
+    font-weight: 250;
+}
+.Welcome-join-btt{
+    width: 193px;
+    height: 58px;
+    border-radius: 50px;
+    background-color:#FD770305;
+    border:2px solid #FD7703;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0px;
+}
+.only-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    background-color:white;
+    
+}
+.logoImagediv img{
+    width: 70px;
+    height: 100px;
+    display: block;
+    object-fit:contain;
+}
+.mission-and-vission{
+    width: auto;
+    height: 100%;
+   background-image: url("./photos/farming plant.jpg");
+   background-size: cover;
+   padding: 5%;
+   display: flex;
+   flex-direction: column;
+
+}
+.mission-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: brightness(45%);
+}
+.vision-div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 45%;
+}
+.vission{
+    z-index: 2;
+    padding: 10px;
+    box-sizing: border-box;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vission h2 {
+    color: white;
+    font-family: "Lora", serif;
+    font-size: 2.5em;
+    margin-bottom: 0px;
+    margin-right: 6.25rem;
+    font-weight: 600;
+}
+.vission-par p {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-top: 3%;
+    line-height: 2em;
+}
+.mission-div {
+    padding-left: 5%;
+    box-sizing: border-box;
+    color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission h2 {
+    color: white;
+    font-family: "Lora", serif;
+    padding-right: 0px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.mission-par p {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2em;
+}
+.why-vedagri-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.why-vedagri-text h2{
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to bottom, #ff8a00 0%, #DF6903 100%);
+    /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+    font-family: "Lora", serif;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.why-vedagri-icon-text{
+    width: 100%;
+    height: 378px;
+    left: 200px;
+    background-color: #FD770310;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5vw 0vw; */
+}
+.icon-img img{
+    width: 107px;
+    height: 83px;
+}
+.top-why-vedagri{
+    margin-top: 60px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.we-offer{
+    width: 31vw;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-family:"Lateef", serif ;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.bottom-why-vedagri{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.joinus-bottom{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.joinus-text h2{
+    text-align: center;
+    font-size: 2.5rem;
+    background: linear-gradient(to bottom, #ff8a00 0%, #DF6903 100%);
+    /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+    font-family: "Lora", serif;
+    margin-bottom: 10px;
+}
+.joinus-text-butt{
+    width: 610px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #ff8a0050;
+    background-image: linear-gradient(-71deg,#FD770350,#FC960460);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.joinus-text-main{
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    line-height: 2em;
+    margin-bottom: 6%;
+}
+.joinus-text-main p{
+    margin: 30px 60px 10px 60px;
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+}
+.joinus-butt {
+    width: 150px;
+    height: 45px;
+    background-color: #FD770360;
+    background-image: linear-gradient(#FD7703,#FC9604);
+    border-radius: 20px;
+    border:0px solid ;
+    color: white;
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+button.butt_last, button:hover{
+    background: white;
+    color: black;
+    border:2px solid #FD7703;
+}
+footer
+{
+    width: 100%;
+    height: 280px;
+    background-color: #FC9604;
+    position: relative;
+}
+.circles{
+    width: 22%;
+    height: 26%;
+    background-color: #FD7703;
+    position: absolute;
+    z-index: 1;
+    border-radius: 0px 0px 150px;
+}
+.image-of-footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.image2{
+    width: 25%;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    z-index: 2;
+}
+.follow-us {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    right: 40%;
+    width: 10%;
+    z-index: 3;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora", serif;
+    font-size: 125%;
+    font-weight: 200;
+}
+.follow-us-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.follow-us-icons img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+.reach{
+    position: absolute;
+    top: 15%;
+    left: 71%;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.reach img{
+    width: 20px;
+    height: 20px;
+    margin: 14px;
+}
+.reach-text {
+    font-family:"Lora", serif;
+    font-size: 125%;
+    color: #ffffff;
+    font-weight: 200;
+
+}
+.reach-iocon-text{
+    display: flex;
+    flex-direction: column;
+}
+.mail-phone-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
+.circle_2 {
+    width: 39%;
+    height: 86%;
+    background-color: #FD7703;
+    position: absolute;
+    z-index: 3;
+    border-radius: 150px 150px 150px 1500px;
+    top: 13%;
+    left: 61%;
+}
+/* mobile phone screen and for tab */
+@media screen and (max-width: 1118px){
+    .navBar_buttons, .NavButtDiv
+    {
+        display: none;
+    }
+    .nav_join{
+        width:50%;
+    }
+    .menu_bar{
+        position: absolute;
+        right: 4%;
+        width: 50px;
+        height: 50px;
+    }
+    .text_para {
+        line-height: 1.6rem;
+        font-size: 110%;
+    }
+}
+/* when it is more than 1040px or for tab */
+@media screen and (max-width:1118px) {
+    .Main_home_image {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        background-image: url(./photos/sunset-6230494_1280.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .text-image {
+        background: #6FB71399;
+        border-radius: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50%;
+        height: auto;
+        margin-left: 5%;
+    }
+    .vission h2 {
+        color: white;
+        font-family: "Lora", serif;
+        font-size: 2.5em;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        font-weight: 600;
+    }
+    .mission-and-vission {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .vision-div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        align-items: center;
+        top: 0;
+        left: 5%;
+        width: 90%;
+    }
+    .vission-par p {
+        color: white;
+        font-size: 1.25em;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        margin-top: 3%;
+    }
+    .mission-div {
+        padding: 10px;
+        box-sizing: border-box;
+        color: black;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mission h2 {
+        color: white;
+        font-family: "Lora", serif;
+        padding-right: 0px;
+        font-size: 2.5em;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    .mission-par p {
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.25em;
+        font-weight: 400;
+    }
+    .welcom-image-text {
+        width: 100%;
+        height: 130%;
+        background-color: #FD770310;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcom-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 0px;
+    }
+    .why-vedagri-icon-text {
+        width: auto;
+        height: 100%;
+        background-color: #FD770310;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw 7vw;
+    }
+    .top-why-vedagri {
+        margin-left: 0px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-why-vedagri {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .we-offer {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        font-family: "Lateef", serif;
+        font-weight: 300;
+        font-size: 1.6rem;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .circle_2 {
+        width: 40%;
+        height: 86%;
+        background-color: #FD7703;
+        position: absolute;
+        z-index: 1;
+        border-radius: 150px 150px 150px 1500px;
+        top: 13%;
+        left: 60%;
+    }
+    
+} 
+/* for hiding the navbar section for the pc and laptops */
+@media screen and (min-width:1118px)
+{
+    .menu_bar
+    {
+        display: none;
+    }
+}
+/* for the phone size */
+@media screen and (max-width:800px) {
+    .text-image h1{
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 10%;
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        z-index: 1;
+        text-align: left;
+    }
+    .Brand_name h1 {
+        font-family: "Lora", serif;
+        font-size: 130%;
+        color: #FD7703;
+        margin: 20px 0px 20px 10px;
+    }
+    .text-image{
+        width:80%;
+        height: 65%;
+        margin: 0px;
+    }
+    .text-image h1{
+        font-size: xx-large;
+    }
+    .Main_home_image {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        background-image: url(./photos/sunset-6230494_1280.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome-title h2 {
+        text-align: center;
+        background: linear-gradient(to bottom, #ff8a00 0%, #DF6903 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Lora", serif;
+    }
+    .welcom-image-text {
+        width: 100%;
+        height: 130%;
+        background-color: #FD770310;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .welcom-img {
+        width: 20.25em;
+        height: 20.25em;
+        margin: 30px 0px;
+    }
+    .welcom-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-left: 0px;
+    }
+    .vission h2 {
+        color: white;
+        font-family: "Lora", serif;
+        font-size: 1.5em;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        font-weight: 600;
+    }
+    .mission-and-vission {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .vision-div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        align-items: center;
+        top: 0;
+        left: 5%;
+        width: 90%;
+    }
+    .vission-par p {
+        color: white;
+        font-size: 100%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        margin-top: 3%;
+    }
+    .mission-div {
+        padding: 10px;
+        box-sizing: border-box;
+        color: black;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mission h2 {
+        color: white;
+        font-family: "Lora", serif;
+        padding-right: 0px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    .mission-par p {
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-size: 100%;
+        font-weight: 400;
+    }
+    .why-vedagri-icon-text {
+        width: auto;
+        height: 560px;
+        left: 200px;
+        background-color: #FD770310;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw 7vw;
+    }
+    .top-why-vedagri {
+        margin-left: 0px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-why-vedagri {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .we-offer {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        font-family: "Lateef", serif;
+        font-weight: 300;
+        font-size: 1.4rem;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .icon-img img {
+        width: 107px;
+        height: 83px;
+    }
+    .why-vedagri-icon-text {
+        width: auto;
+        height: 100%;
+        background-color: #FD770310;
+        display: flex;
+        flex-direction: column;
+    }
+    .joinus-text-butt {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-color: #ff8a0050;
+        background-image: linear-gradient(-71deg, #FD770350, #FC960460);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .joinus-text-main {
+        display: flex;
+        height: 75%;
+        width: 86%;
+        align-items: center;
+        justify-content: center;
+        line-height: 2em;
+    }
+    .joinus-text-main p {
+        margin: 20px 0px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 100%;
+        color: black;
+    }
+    .joinus-butt {
+        width: 150px;
+        height: 40px;
+        margin-bottom: 20px;
+        background-color: #FD770360;
+        background-image: linear-gradient(#FD7703, #FC9604);
+        border-radius: 20px;
+        border: 0px solid;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .follow-us {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        width: 25%;
+        z-index: 3;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Lora", serif;
+        font-size: 100%;
+        font-weight: 200;
+    }
+    .reach {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reach-text {
+        font-family: "Lora", serif;
+        font-size: 100%;
+        color: #ffffff;
+        font-weight: 200;
+    }
+    .image2 {
+        width: 65%;
+        position: absolute;
+        top: 15%;
+        left: 11%;
+        z-index: 2;
+    }
+    .circles {
+        width: 70%;
+        height: 28%;
+        background-color: #FD7703;
+        position: absolute;
+        z-index: 1;
+        border-radius: 0px 0px 150px;
+    }
+    .circle_2 {
+        display: none;
+    }
+    .nav_join_side{
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+/* page for Vedagri Ayurveda and Agriculture or service 1 */
+.service_1 {
+    background-color: #FFF7F0;
+}
+.service_1_h1{
+    text-align: center;
+    font-size: 3.7rem;
+    background: linear-gradient(to bottom, #ff8a00 0%, #DF6903 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Lora", serif;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.service_1_cont{
+
+    display: flex;
+    flex-direction: row;
+    padding: 6%;
+
+}
+.Sev_cont{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 4% 2%;
+    padding-top: 1%;
+    align-items: center;
+    background-color: white;
+    margin: 2%;
+    font-family:"Roboto", sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.Sev_cont h3{
+    font-size: 1.3em;
+}
+.sev_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sev_img img{
+    width: 60%;
+    border-radius: 100%;
+    border: 1px solid #FC9604;
+}
+.Sev_cont u{
+    text-decoration-color:#FF0000;
+    text-decoration-thickness: 3px;
+}
+.sev_p p{
+    color: #5D5D5D;
+    text-align: center;
+}
+.Sev_cont:hover {
+    background-color: #FF902F;
+    color: white;
+}
+.Sev_cont:hover p{
+    color: white;
+}
+@media screen and (max-width:1118px) {
+    .ServicesBtt:hover .dropdown-content {
+        display: block;
+        width: 45%;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .ServicesBtt {
+        font-weight: normal;
+        margin: 30px 0px;
+    }
+
+    
+}
+@media screen and (max-width:800px) {
+    .service_1_cont {
+        display: flex;
+        flex-direction: column;
+        padding: 6%;
+        align-items: center;
+    }
+    .Sev_cont {
+        width: 80%;
+        padding: 20px;
+    }
+    .Sev_cont h3{
+        font-size: 2.3em;
+    }
+    .Sev_cont p{
+        font-size: 1.3em;
+    }
+    .ServicesBtt:hover .dropdown-content {
+        display: block;
+        width: 45%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .ServicesBtt{
+        font-weight: normal;
+        margin: 30px 0px;
+    }
+}
+@media screen and (max-width:500px) {
+    .Sev_cont {
+        width: 90%;
+        padding:20px ;
+    }
+    .Sev_cont h3{
+        font-size: 1.3em;
+    }
+    .Sev_cont p{
+        font-size: 1em;
+    }
+    .ServicesBtt:hover .dropdown-content {
+        display: block;
+        width: 70%;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
